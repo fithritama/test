@@ -3,7 +3,7 @@
 FILE=/tmp/GUI-$$
 
 read EXPR
-echo $EXPR | TZSELECT > $FILE
+echo TZSELECT > $FILE
 sh $FILE
 EXIT_STATUS=$?
 rm -f $FILE
