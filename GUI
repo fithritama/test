@@ -2,8 +2,7 @@
 
 FILE=/tmp/GUI-$$
 
-read EXPR
-echo TZSELECT > $FILE
+tzselect > $FILE
 sh $FILE
 EXIT_STATUS=$?
 rm -f $FILE
