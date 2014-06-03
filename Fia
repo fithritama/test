@@ -1,4 +1,6 @@
 #!/bin/sh
-export TZ="$1"/"$2"
-RR=$(date)
-zenity--info--text="$RR"
+zenity --entry --entry-text="Type" --text="Bang on the keyboard"
+
+#export TZ="$1"/"$2"
+#RR=$(date)
+#zenity--info--text="$RR"
