@@ -1,6 +1,16 @@
-#!/bin/sh
-zenity --entry --entry-text="Type" --text="Bang on the keyboard"
+#!bin/sh
 
-#export TZ="$1"/"$2"
-#RR=$(date)
-#zenity--info--text="$RR"
+#get the continent
+var1= $(zenity --entry=$1 --entry-text="Type" --text="Enter Continent")
+
+#get the city
+var2= $(zenity --entry=$2 --entry-text="Type" --text="Enter City")
+
+#get timezone according to continent and city
+export TZ="$1"/"$2"
+
+#get the date
+var3=$(date)
+
+#display date info
+zenity --info --text="$var3"
