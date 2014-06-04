@@ -1,0 +1,24 @@
+#!/bin/sh
+lang=$(zenity --entry --entry-text="Enter 1 for Indonesian ; 2 for English" --text="Enter preffered language")
+if [ $lang -eq 1 ]
+then
+{
+LANG=id_ID
+Variable1= $(zenity --entry --entry-text="Ketik" --text="Masukkan Benua")
+Variable2= $(zenity --entry --entry-text="Ketik" --text="Masukkan Kota")
+export TZ="$Variable1"/"$Variable2"
+Display=$(date)
+zenity --info --text="$Display"
+}
+elif [ $lang -eq 2 ]
+then
+{
+LANG=en_US
+Variable1= $(zenity --entry --entry-text="Type" --text="Enter Continent")
+Variable2= $(zenity --entry --entry-text="Type" --text="Enter Region")
+export TZ="$Variable1"/"$Variable2"
+Display=$(date)
+zenity --info --text="$Display"
+}
+fi
+
