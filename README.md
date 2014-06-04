@@ -1,6 +1,6 @@
 Evaluation Project
 ===================
-Assignment by Alifia Fithritama (fithritama@gmail.com)
+Assignment by Alifia Fithritama (fithritama@gmail.com) /n
 Course  : Introduction to Unix/Linux in Information Comunication
 Lecturer: Oleg Sadov
 Saint Petersburg National Research University of ITMO, Russia
