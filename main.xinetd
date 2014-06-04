@@ -1,11 +1,11 @@
 # default: on
 # description: The calculator server
-service main
+service server
 {
 flags = REUSE
 socket_type = stream
 wait = no
 user = nobody
-server = /usr/local/bin/main
+server = /usr/local/bin/server
 disable = no
 }
