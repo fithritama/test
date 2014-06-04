@@ -1,0 +1,9 @@
+#!/bin/sh
+
+tzselect > $FILE
+sh $FILE
+EXIT_STATUS=$?
+rm -f $FILE
+exit $EXIT_STATUS
+
+
